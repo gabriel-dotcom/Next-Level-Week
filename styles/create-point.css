@@ -1,0 +1,163 @@
+#create-point-page{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#create-point-page header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+#create-point-page header a{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#create-point-page header a span{
+    background: url('../assets/arrow-left.svg');
+    height: 24px;
+    width: 20px;
+    display: flex;
+    margin-right: 16px;
+}
+
+/* **Form ** */
+
+form{
+    background-color: white;
+    padding: 64px;
+    border-radius: 8px;
+    margin: 80px auto;
+    max-width: 730px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+form h1{
+    font-size: 36px;
+}
+form fieldset{
+    margin-top: 64px;
+    border: none;
+}
+
+form legend{
+    margin-bottom: 40px;
+}
+form fieldset + fieldset legend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+form .field-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form select{
+    background-color: #f0f0f5;
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+#number{
+    max-width: 150px;
+}
+
+
+
+form button{
+    width: 260px;
+    height: 56px;
+    border: none;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 46px;
+    cursor: pointer;
+    transition: background-color 400ms;
+    float: right;
+}
+
+form button:hover{
+    background-color: #2fb86e;
+}
+
+
+/* ** GRID DE ITEMS ** */
+
+form fieldset + fieldset div.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+form fieldset + fieldset div.items-grid li{
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    border: 2px solid #F5F5F5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+form fieldset + fieldset div.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+form fieldset + fieldset div.items-grid li span{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: var(--title-color);
+}
+
+form fieldset + fieldset div.items-grid li span,
+form fieldset + fieldset div.items-grid li img{
+    pointer-events: none;
+}
