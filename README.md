@@ -4,3 +4,5 @@ One week of learning in Web development Full-Stack correctly and updated with Ro
 
 This project was done in a week to explode the knowledge in FullStack development without FrameWorks in pure code. 
 A Network with friends where you were able to understand everything about the subject
+
+Focused in JavaScript, HTML and CSS.
